@@ -69,7 +69,13 @@ Android: Copy `SocketClient.java` to `platforms/android/src/nl/xservices/plugins
 
 
 ## 4. Usage
-You have two choices to make when showing a SocketClient: where to show it and for how long.
+window.plugins.socketClient.sendSocket(address, //example "127.0.0.1"
+										port,   //example "8080"
+										message, //example "message sended"
+										successCallback,
+										errorCallback);
+
+window.plugins.socketClient.sendSocket("127.0.0.1", "80", "test", function(e){console.log("success: "+e);}, function(e){console.log("error: "+e);});
 
 ## 5. CREDITS
 
