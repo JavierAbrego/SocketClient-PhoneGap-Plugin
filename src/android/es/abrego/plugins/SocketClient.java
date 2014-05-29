@@ -98,7 +98,7 @@ public class SocketClient extends CordovaPlugin {
 			}).start();		  		 
 		  return true;
 	  } else {
-	      callbackContext.error("SocketClient." + action + " is not a supported function. Did you mean '" + ACTION_SHOW_EVENT + "'?");
+	      callbackContext.error("SocketClient." + action + " is not a supported function. Did you mean '" + ACTION_SEND_SOCKET + "'?");
 	      return false;
 	  }
   }
