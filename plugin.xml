@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="es.abrego.plugins.socketClient"
+        version="2.0">
+
+  <name>SocketClient</name>
+
+  <description>
+    This plugin allows communication through sockets with a server.
+  </description>
+
+  <license>MIT</license>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <js-module src="www/SocketClient.js" name="SocketClient">
+    <clobbers target="window.plugins.socketClient" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="SocketClient">
+        <param name="android-package" value="es.abrego.plugins.SocketClient" />
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/es/abrego/plugins/SocketClient.java" target-dir="src/es/abrego/plugins"/>
+  </platform>
+
+</plugin>
