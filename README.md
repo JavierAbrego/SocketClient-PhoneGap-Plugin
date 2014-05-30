@@ -64,7 +64,7 @@ SocketClient.js is brought in automatically. There is no need to change or add a
 
 3\. Download the source files and copy them to your project.
 
-Android: Copy `SocketClient.java` to `platforms/android/src/nl/xservices/plugins` (create the folders)
+Android: Copy `SocketClient.java` to `platforms/android/src/es/abrego/plugins` (create the folders)
 
 
 
